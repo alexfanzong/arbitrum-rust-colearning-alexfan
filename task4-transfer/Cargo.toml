@@ -1,0 +1,10 @@
+[package]
+name = "task4-transfer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# 必须包含 "full" 特性，否则 #[tokio::main] 会失效
+tokio = { version = "1", features = ["full"] }
+ethers = { version = "2.0", features = ["rustls"] }
+dotenv = "0.15"
